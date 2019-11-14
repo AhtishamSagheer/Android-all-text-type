@@ -164,7 +164,7 @@
         app:layout_constraintVertical_bias="0.538" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -180,31 +180,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Time"
-        app:layout_constraintBottom_toBottomOf="@+id/editText9"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText9" />
+        app:layout_constraintTop_toTopOf="@+id/time" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintEnd_toEndOf="@+id/editText9"
+        app:layout_constraintEnd_toEndOf="@+id/time"
         app:layout_constraintHorizontal_bias="0.777"
-        app:layout_constraintStart_toStartOf="@+id/editText9"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintStart_toStartOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date"
-        app:layout_constraintBottom_toBottomOf="@+id/editText10"
-        app:layout_constraintEnd_toStartOf="@+id/editText10"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        app:layout_constraintEnd_toStartOf="@+id/date"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText10" />
+        app:layout_constraintTop_toTopOf="@+id/date" />
 
     <EditText
         android:id="@+id/editText11"
@@ -212,10 +212,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/editText10"
+        app:layout_constraintEnd_toEndOf="@+id/date"
         app:layout_constraintHorizontal_bias="0.777"
-        app:layout_constraintStart_toStartOf="@+id/editText10"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
 
     <TextView
         android:id="@+id/textView11"
@@ -323,6 +323,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="CheckedTextView"
+
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="true"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/multiAutoCompleteTextView"
         app:layout_constraintStart_toStartOf="@+id/multiAutoCompleteTextView"
@@ -354,15 +358,6 @@
             android:hint="TextInputLayout" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        tools:layout_editor_absoluteX="367dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
